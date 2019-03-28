@@ -1,13 +1,16 @@
 class Owner
   # code goes here
-@@all = []
 
-def initialize
-  @@all << self
-end
+  @@all = []
 
-def self.all
-@@all
-end
+  attr_accessor :Owner
 
+  def initialize
+    @@all << self
+  end
+
+  def all
+    @@all 
+  end
+  
 end
