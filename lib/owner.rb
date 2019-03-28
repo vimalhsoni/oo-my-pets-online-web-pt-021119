@@ -5,10 +5,9 @@ class Owner
   attr_accessor :name
   attr_reader :species
 
-  def initialize(name)
-    @name = name
-    @@all << self
+  def initialize(species)
     @species = species
+    @@all << self
   end
 
   def self.all
