@@ -22,7 +22,7 @@ class Owner
     @@all.clear
   end
 
-  def species(species)
+  def species
     @species = species
   end
 
