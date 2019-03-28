@@ -1,16 +1,15 @@
 class Owner
-  # code goes here
-
+ 
   @@all = []
-
-  attr_accessor :Owner
-
-  def initialize
+ 
+  attr_accessor :name
+ 
+  def initialize(name)
+    @name = name
     @@all << self
   end
-
+ 
   def self.all
     @@all
   end
-
 end
